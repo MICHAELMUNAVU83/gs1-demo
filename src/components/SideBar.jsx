@@ -10,7 +10,7 @@ import copyright from "./images/copyright.png";
 import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
-    <div className="w-[280px] fixed p-4 flex flex-col justify-between  h-[100vh] shadow-2xl shadow-black">
+    <div className="w-[280px] fixed p-4 hidden md:flex flex-col justify-between  h-[100vh] shadow-2xl shadow-black">
       <Link to="/">
         <img src={gs1logo} alt="gs1logo" className="w-[109px]  h-[73px]" />
       </Link>

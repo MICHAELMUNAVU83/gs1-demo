@@ -67,13 +67,13 @@ const AllServices = () => {
   return (
     <div>
       <div className="p-8">
-        <h1 className="text-5xl my-4 font-bold">
+        <h1 className="md:text-5xl my-4 font-bold">
           We Cater to the Following Sectors
         </h1>
-        <div className="flex gap-8">
+        <div className="flex md:flex-row flex-col gap-8">
           {services.map((service) => (
             <div
-              className="flex bg-[#F26334] flex-col items-center cursor-pointer hover:scale-105 transition ease-in-out duration-300"
+              className="flex bg-[#F26334] md:w-[250px] w-[300px] mx-auto flex-col items-center cursor-pointer hover:scale-105 transition ease-in-out duration-300"
               key={service.id}
               style={{
                 borderRadius: "5px",
@@ -82,7 +82,7 @@ const AllServices = () => {
               <img
                 src={phonesectorpic}
                 alt="service"
-                className="w-[250px] h-[250px]"
+                className="md:w-[250px] md:h-[250px] w-[300px] h-[300px]"
               />
               <div className="flex py-2 items-center gap-2">
                 <img
@@ -103,7 +103,7 @@ const AllServices = () => {
         }}
       />
 
-      <div className="flex p-8 flex-col ">
+      <div className="flex md:p-8 p-4 flex-col ">
         <h1 className="text-5xl my-4 font-bold">
           Unlock the Power of GS1 Standards
         </h1>
@@ -123,12 +123,56 @@ const AllServices = () => {
         </button>
       </div>
 
-      <div className="flex p-8 flex-col ">
+      <div className="flex md:p-8 p-4 flex-col ">
         <h1 className="text-5xl my-4 font-bold">New Innovations</h1>
+
+        {/* {desktop} */}
         <Splide
-          className="px-16 w-[85%]"
+          className="px-16 w-[85%] mx-auto hidden md:block"
           options={{
             perPage: 2,
+            type: "loop",
+            perMove: 1,
+            rewind: true,
+            gap: "1rem",
+            autoplay: true,
+            pauseOnHover: false,
+            resetProgress: false,
+            arrows: true,
+            pagination: false,
+          }}
+        >
+          {innovations.map((innovation) => (
+            <SplideSlide
+              className="w-[348px] h-[348px] flex  items-end bg-cover bg-center bg-no-repeat"
+              key={innovation.id}
+              style={{
+                backgroundImage: `url(${innovation.image})`,
+              }}
+            >
+              <div className="p-8 text-white">
+                <p className=" font-bold  text-2xl  text-center">
+                  {innovation.title}
+                </p>
+                <p>{innovation.paragraph}</p>
+                <div className="flex gap-2 text-white items-center">
+                  <p className="underline">Learn More</p>
+                  <img
+                    src={arrow}
+                    alt="arrow"
+                    className="w-[19.2px] h-[12px]"
+                  />
+                </div>
+              </div>
+            </SplideSlide>
+          ))}
+        </Splide>
+
+        {/* {mobile} */}
+        <Splide
+          className="md:px-16 px-4 w-[85%] mx-auto md:hidden "
+          options={{
+            perPage: 1,
             type: "loop",
             perMove: 1,
             rewind: true,

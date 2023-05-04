@@ -63,22 +63,22 @@ const HeroSliders = () => {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div
-              className="flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat h-[100vh]"
+              className="flex flex-col justify-center items-center bg-cover bg-right md:bg-center bg-no-repeat h-[100vh]"
               style={{
                 backgroundImage: `url(${slide.image})`,
               }}
             >
               <div className="text-start">
-                <p className=" w-[800px] mx-auto font-bold text-5xl ">
+                <p className=" md:w-[800px] w-[80%] mx-auto font-bold text-2xl md:text-5xl ">
                   {slide.title}
                 </p>
                 {slide.paragaph && (
-                  <p className=" w-[800px] mx-auto text-2xl ">
+                  <p className=" md:w-[800px] w-[80%] mx-auto text-sm md:text-2xl ">
                     {slide.paragaph}
                   </p>
                 )}
                 {slide.button && (
-                  <button className=" w-[197px] text-start h-[64px] font-bold uppercase text-2xl bg-[white] text-black flex justify-center items-center rounded-lg mt-4">
+                  <button className=" md:w-[197px] w-[60%] mx-auto md:mx-0  text-start h-[64px]  text-xl font-bold uppercase md:text-2xl bg-[white] text-black flex justify-center items-center rounded-lg mt-4">
                     {slide.button}
                   </button>
                 )}

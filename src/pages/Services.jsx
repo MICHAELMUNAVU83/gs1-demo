@@ -4,7 +4,7 @@ import AllServices from "../components/ServicesComponents/AllServices";
 
 const Services = () => {
   return (
-    <div className="ml-[280px] mx-auto ">
+    <div className="md:ml-[280px]  mx-auto ">
       <TopServices />
       <AllServices />
     </div>

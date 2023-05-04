@@ -3,7 +3,7 @@ import HeroSliders from "../components/HomeComponents/HeroSliders";
 
 const Home = () => {
   return (
-    <div className="ml-[280px] mx-auto text-white ">
+    <div className="md:ml-[280px] mx-auto text-white ">
       <HeroSliders />
     </div>
   );
