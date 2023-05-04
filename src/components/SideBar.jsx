@@ -42,9 +42,9 @@ const SideBar = () => {
           <p className="my-2  cursor-pointer hover:scale-105 transition ease-in-out duration-300">
             Membership
           </p>
-          <p className="my-2   hover:scale-105 transition ease-in-out duration-300  cursor-pointer">
+          <Link to="/sectors" className="my-2   hover:scale-105 transition ease-in-out duration-300  cursor-pointer">
             Gs1 Sectors
-          </p>
+          </Link>
           <p className="my-2 cursor-pointer hover:scale-105 transition ease-in-out duration-300">
             Resources
           </p>
