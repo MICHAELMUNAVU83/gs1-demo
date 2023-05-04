@@ -7,9 +7,10 @@ import { IoCall } from "react-icons/io5";
 import { SiGmail } from "react-icons/si";
 import { ImFacebook } from "react-icons/im";
 import copyright from "./images/copyright.png";
+import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
-    <div className="w-[244px] fixed p-4 flex flex-col justify-between  h-[100vh] ">
+    <div className="w-[280px] fixed p-4 flex flex-col justify-between  h-[100vh] shadow-2xl shadow-black">
       <img src={gs1logo} alt="gs1logo" className="w-[109px]  h-[73px]" />
       <div className="w-80% mx-auto">
         <h1 className="text-2xl mt-8 font-bold">Welcome, User</h1>
@@ -26,9 +27,9 @@ const SideBar = () => {
           <p className="my-2 cursor-pointer   hover:scale-105 transition ease-in-out duration-300">
             About us
           </p>
-          <p className="my-2  cursor-pointer  hover:scale-105 transition ease-in-out duration-300">
+          <Link to="/services" className="my-2  cursor-pointer  hover:scale-105 transition ease-in-out duration-300">
             Our services
-          </p>
+          </Link>
           <p className="my-2  cursor-pointer hover:scale-105 transition ease-in-out duration-300">
             Membership
           </p>
