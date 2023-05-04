@@ -12,7 +12,7 @@ const Retail = () => {
 
       <div className="p-8">
         <h1 className="text-5xl font-bold">Retail</h1>
-        <p className="w-[90%] text-xl my-8">
+        <p className="md:w-[90%] w-[95%] mx-auto md:mx-0 text-xl my-8">
           As a fiercely competitive, multi-trillion-dollar industry, Foodservice
           is driving forward at an accelerated rate. This forever evolving
           segment is on the cusp of expansion, encompassing any business,
@@ -27,7 +27,7 @@ const Retail = () => {
           communication between trading partners, ultimately benefiting the
           consumer.
         </p>
-        <button className="w-[217px] text-start h-[64px] font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4">
+        <button className="w-[217px] md:mx-0 mx-auto text-start h-[64px] font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4">
           Make Inquiry
         </button>
       </div>

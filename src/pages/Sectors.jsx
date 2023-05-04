@@ -7,7 +7,7 @@ import Transport from "../components/SectorsComponents/Transport";
 const Sectors = () => {
   const [selectedsector, setSelectedsector] = useState("Food");
   return (
-    <div className="ml-[280px] mx-auto ">
+    <div className="md:ml-[280px] mx-auto ">
       <SectorsHeader
         setSelectedsector={setSelectedsector}
         selectedsector={selectedsector}

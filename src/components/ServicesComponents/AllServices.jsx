@@ -66,8 +66,8 @@ const AllServices = () => {
 
   return (
     <div>
-      <div className="p-8">
-        <h1 className="md:text-5xl my-4 font-bold">
+      <div className="md:p-8 p-4">
+        <h1 className="md:text-5xl text-2xl my-4 font-bold">
           We Cater to the Following Sectors
         </h1>
         <div className="flex md:flex-row flex-col gap-8">
@@ -124,7 +124,7 @@ const AllServices = () => {
       </div>
 
       <div className="flex md:p-8 p-4 flex-col ">
-        <h1 className="text-5xl my-4 font-bold">New Innovations</h1>
+        <h1 className="md:text-5xl text-3xl my-4 font-bold">New Innovations</h1>
 
         {/* {desktop} */}
         <Splide
@@ -186,7 +186,7 @@ const AllServices = () => {
         >
           {innovations.map((innovation) => (
             <SplideSlide
-              className="w-[348px] h-[348px] flex  items-end bg-cover bg-center bg-no-repeat"
+              className="md:w-[348px] md:h-[348px] h-[400px] w-[400px] flex  items-end bg-cover bg-center bg-no-repeat"
               key={innovation.id}
               style={{
                 backgroundImage: `url(${innovation.image})`,
@@ -210,15 +210,15 @@ const AllServices = () => {
           ))}
         </Splide>
       </div>
-      <div className="flex mt-8 gap-12">
+      <div className="flex md:flex-row flex-col mt-8 gap-12">
         <img
           src={needabarcode}
           alt="needabarcode"
           className="w-[380px] h-[380px]"
         />
         <div className="flex  flex-col  justify-between">
-          <h1 className="text-5xl font-bold">Need a Bar Code?</h1>
-          <p className="w-[65%] leading-[24px] text-xl">
+          <h1 className="md:text-5xl text-center md:text-start text-2xl font-bold">Need a Bar Code?</h1>
+          <p className="md:w-[65%] w-[90%] md:mx-0 mx-auto leading-[24px] md:text-xl">
             GS1 Barcodes enable trading on a global scale with over 2 million
             companies currently using them. While barcodes play a very important
             role in the supply chain, when done wrong barcodes can cause so many
@@ -231,7 +231,7 @@ const AllServices = () => {
             style={{
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
-            className="w-[260px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
+            className="w-[260px] mx-auto md:mx-0 text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
           >
             Make an Inquiry
           </button>
@@ -245,11 +245,11 @@ const AllServices = () => {
         }}
       />
 
-      <div className="flex flex-col mt-8 p-8 gap-12">
-        <h1 className="text-[60px] w-[824px] font-bold">
+      <div className="flex flex-col mt-8 md:p-8 p-4 gap-12">
+        <h1 className="md:text-5xl font-bold text-3xl">
           Upgrade Your Company with Standards Training
         </h1>
-        <p className="w-[918px] text-2xl">
+        <p className="md:w-[918px] text-2xl">
           For over 10 years we've trained thousands of companies on our
           standards and solutions
         </p>
@@ -263,13 +263,13 @@ const AllServices = () => {
         </button>
       </div>
 
-      <div className="flex mt-8 gap-12">
+      <div className="flex md:flex-row flex-col mt-8 gap-12">
         <img src={bvr} alt="needabarcode" className="w-[380px] h-[380px]" />
         <div className="flex  flex-col  justify-between">
-          <h1 className="text-5xl font-bold w-[50%]">
+          <h1 className="md:text-5xl text-2xl p-2 md:p-0 font-bold md:w-[50%]">
             Is Your Barcode Verification Report Genuine?
           </h1>
-          <p className="w-[65%] leading-[24px] text-xl">
+          <p className="md:w-[65%] w-[80%] p-2 md:p-0 leading-[24px] text-xl">
             Not all barcode verification reports are created equal. To ensure
             that you receive a genuine GS1 Barcode Verification Report, you
             should only use a GS1-accredited verification service.
@@ -290,17 +290,15 @@ const AllServices = () => {
 
       <p className="bg-black h-[3px] mx-auto w-[80%] my-12" />
 
-          <div className="w-[70%] my-8 mx-auto">
-              
-              <h1 className="text-5xl text-center my-4 font-bold">Fraud Alert!</h1>
-                  
-          
-        <div className="flex justify-between">
+      <div className="md:w-[70%] my-8 mx-auto">
+        <h1 className="text-5xl text-center my-4 font-bold">Fraud Alert!</h1>
+
+        <div className="flex md:flex-row flex-col gap-4 items-center mx-auto md:justify-between">
           <div
             style={{
               backgroundImage: `url(${fraud1})`,
             }}
-            className="w-[420px] flex   justify-start items-end p-8 h-[420px] bg-cover bg-center bg-no-repeat"
+            className="md:w-[420px] w-[330px] flex   justify-start items-end p-8 md:h-[420px] h-[330px] bg-cover bg-center bg-no-repeat"
           >
             <div className="flex flex-col text-white">
               <p className="font-bold text-3xl">Arnold Polycarp Okello</p>
@@ -311,7 +309,7 @@ const AllServices = () => {
             style={{
               backgroundImage: `url(${fraud2})`,
             }}
-            className="w-[420px] flex   justify-start items-end p-8 h-[420px] bg-cover bg-center bg-no-repeat"
+            className="md:w-[420px] w-[330px] flex   justify-start items-end p-8 md:h-[420px] h-[330px] bg-cover bg-center bg-no-repeat"
           >
             <div className="flex flex-col text-white">
               <p className="font-bold text-3xl">James Macharia</p>
@@ -320,7 +318,7 @@ const AllServices = () => {
           </div>
         </div>
 
-        <p className="w-[95%] text-xl">
+        <p className="w-[95%] mx-auto md:mx-0 md:text-xl">
           It is notified for the general public that the two named persons
           herein ceased to be employees of GS1 Kenya. The management hereby
           denies to accept any responsibility for transactions done and the
@@ -328,7 +326,7 @@ const AllServices = () => {
           transactions conducted by the above two named persons.
         </p>
         <button
-          className="w-[226px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
+          className="w-[226px] md:mx-0 mx-auto text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
           style={{
             boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
           }}

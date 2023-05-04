@@ -21,7 +21,7 @@ const SectorsHeader = ({ setSelectedsector, selectedsector }) => {
   ];
   return (
     <div
-      className="flex p-8 flex-col  bg-cover bg-center bg-no-repeat h-[200px]"
+      className="flex md:p-8 p-2 flex-col  bg-cover bg-center bg-no-repeat h-[200px]"
       style={{
         backgroundImage: `url(${sectorsheaderbg})`,
       }}
@@ -32,12 +32,12 @@ const SectorsHeader = ({ setSelectedsector, selectedsector }) => {
           <div
             className={
               selectedsector === sector.name
-                ? "  bg-[#F26334] text-white w-[123px] h-[60px] cursor-pointer  rounded-lg flex items-center justify-center p-4"
-                : "bg-white w-[123px] h-[60px] cursor-pointer  rounded-lg flex items-center justify-center p-4"
+                ? "  bg-[#F26334] text-white md:w-[123px] w-[100%] md:h-[60px] h-[30px] cursor-pointer  rounded-lg flex  items-center justify-center   p-4"
+                : "bg-white md:w-[123px] w-[100%] gap-2 md:h-[60px] h-[30px] cursor-pointer  rounded-lg flex items-center justify-center p-4  "
             }
             onClick={() => setSelectedsector(sector.name)}
           >
-            <p className="font-bold  text-xl  text-center">
+            <p className="font-bold text-xs  md:text-xl  text-center">
               {sector.name}
             </p>
           </div>
