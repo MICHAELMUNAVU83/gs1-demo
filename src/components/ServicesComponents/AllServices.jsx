@@ -170,7 +170,7 @@ const AllServices = () => {
 
         {/* {mobile} */}
         <Splide
-          className="md:px-16 px-4 w-[85%] mx-auto md:hidden "
+          className="md:px-16 px-4 w-[99%] md:w-[85%] mx-auto md:hidden "
           options={{
             perPage: 1,
             type: "loop",
@@ -269,7 +269,7 @@ const AllServices = () => {
           <h1 className="md:text-5xl text-2xl p-2 md:p-0 font-bold md:w-[50%]">
             Is Your Barcode Verification Report Genuine?
           </h1>
-          <p className="md:w-[65%] w-[80%] p-2 md:p-0 leading-[24px] text-xl">
+          <p className="md:w-[65%] w-[95%] p-2 md:p-0 leading-[24px] text-xl">
             Not all barcode verification reports are created equal. To ensure
             that you receive a genuine GS1 Barcode Verification Report, you
             should only use a GS1-accredited verification service.
@@ -281,7 +281,7 @@ const AllServices = () => {
             style={{
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
-            className="w-[331px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
+            className="w-[331px] md:mx-0 mx-auto  text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
           >
             BVR AUTHENTIFICATION
           </button>
@@ -318,7 +318,7 @@ const AllServices = () => {
           </div>
         </div>
 
-        <p className="w-[95%] mx-auto md:mx-0 md:text-xl">
+        <p className="w-[95%] md:my-0 my-4 mx-auto md:mx-0 md:text-xl">
           It is notified for the general public that the two named persons
           herein ceased to be employees of GS1 Kenya. The management hereby
           denies to accept any responsibility for transactions done and the

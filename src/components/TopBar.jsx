@@ -23,7 +23,7 @@ const TopBar = () => {
       <div
         className={
           navbarOpen
-            ? "sm:hidden absolute text-black top-0 right-0 left-0 bottom-0  z-10 h-[45%]  w-full bg-white/90  duration-300 ease-in-out"
+            ? "sm:hidden absolute text-black top-0 right-0 left-0 bottom-0  z-10 h-full  w-full bg-white/90  duration-300 ease-in-out"
             : "sm:hidden absolute top-0 right-0 left-[-100%] bottom-0 flex justify-center items-center w-full h-screen   duration-300 ease-in-out"
         }
       >
