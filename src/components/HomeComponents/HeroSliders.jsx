@@ -53,10 +53,10 @@ const HeroSliders = () => {
           clickable: true,
         }}
         loop={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         modules={[Pagination, Autoplay]}
         className="w-[100%] cursor-pointer"
       >

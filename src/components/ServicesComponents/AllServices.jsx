@@ -12,6 +12,8 @@ import innovation2 from "../images/innovation2.png";
 import arrow from "../images/arrow.png";
 import needabarcode from "../images/needabarcode.png";
 import bvr from "../images/bvr.png";
+import fraud1 from "../images/fraud1.png";
+import fraud2 from "../images/fraud2.png";
 const AllServices = () => {
   const services = [
     {
@@ -111,7 +113,12 @@ const AllServices = () => {
           streamline operations, cut costs, and deliver richer, more satisfying
           customer experiences.
         </p>
-        <button className="w-[197px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4">
+        <button
+          style={{
+            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+          }}
+          className="w-[197px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
+        >
           Learn More
         </button>
       </div>
@@ -176,7 +183,12 @@ const AllServices = () => {
             barcoding to all supply chain stake holders to ensure that barcodes
             are put into effecient use.
           </p>
-          <button className="w-[260px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4">
+          <button
+            style={{
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+            }}
+            className="w-[260px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
+          >
             Make an Inquiry
           </button>
         </div>
@@ -197,7 +209,12 @@ const AllServices = () => {
           For over 10 years we've trained thousands of companies on our
           standards and solutions
         </p>
-        <button className="w-[197px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4">
+        <button
+          style={{
+            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+          }}
+          className="w-[197px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
+        >
           Learn More
         </button>
       </div>
@@ -216,10 +233,64 @@ const AllServices = () => {
             verify your barcodes against global standards, ensuring that your
             report is accurate and reliable.
           </p>
-          <button className="w-[331px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4">
+          <button
+            style={{
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+            }}
+            className="w-[331px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
+          >
             BVR AUTHENTIFICATION
           </button>
         </div>
+      </div>
+
+      <p className="bg-black h-[3px] mx-auto w-[80%] my-12" />
+
+          <div className="w-[70%] my-8 mx-auto">
+              
+              <h1 className="text-5xl text-center my-4 font-bold">Fraud Alert!</h1>
+                  
+          
+        <div className="flex justify-between">
+          <div
+            style={{
+              backgroundImage: `url(${fraud1})`,
+            }}
+            className="w-[420px] flex   justify-start items-end p-8 h-[420px] bg-cover bg-center bg-no-repeat"
+          >
+            <div className="flex flex-col text-white">
+              <p className="font-bold text-3xl">Arnold Polycarp Okello</p>
+              <p>ID Number 32473146</p>
+            </div>
+          </div>
+          <div
+            style={{
+              backgroundImage: `url(${fraud2})`,
+            }}
+            className="w-[420px] flex   justify-start items-end p-8 h-[420px] bg-cover bg-center bg-no-repeat"
+          >
+            <div className="flex flex-col text-white">
+              <p className="font-bold text-3xl">James Macharia</p>
+              <p>ID Number 31559820</p>
+            </div>
+          </div>
+        </div>
+
+        <p className="w-[95%] text-xl">
+          It is notified for the general public that the two named persons
+          herein ceased to be employees of GS1 Kenya. The management hereby
+          denies to accept any responsibility for transactions done and the
+          company will not be liable in any manner whatsoever with respect to
+          transactions conducted by the above two named persons.
+        </p>
+        <button
+          className="w-[226px] text-start h-[64px] cursor-pointer hover:scale-105 transition duration-500 ease-in-out font-bold uppercase text-2xl bg-[#F26334] text-white flex justify-center items-center rounded-lg mt-4"
+          style={{
+            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+          }}
+        >
+          Report Fraud
+        </button>
       </div>
     </div>
   );
