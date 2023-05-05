@@ -27,28 +27,28 @@ const SideBar = () => {
           </p>
         </div>
         <div className="uppercase mt-16 gap-4 flex flex-col text-[20px] leading-[17px] ">
-          <Link to="/" className="my-2 cursor-pointer hover:scale-105 transition ease-in-out duration-300">
+          <Link to="/" className="my-2 cursor-pointer hover:text-[#F26334] hover:scale-105 transition ease-in-out duration-300">
             Home
           </Link>
-          <p className="my-2 cursor-pointer   hover:scale-105 transition ease-in-out duration-300">
+          <p className="my-2 cursor-pointer hover:text-[#F26334]   hover:scale-105 transition ease-in-out duration-300">
             About us
           </p>
           <Link
             to="/services"
-            className="my-2  cursor-pointer  hover:scale-105 transition ease-in-out duration-300"
+            className="my-2  cursor-pointer hover:text-[#F26334]  hover:scale-105 transition ease-in-out duration-300"
           >
             Our services
           </Link>
-          <p className="my-2  cursor-pointer hover:scale-105 transition ease-in-out duration-300">
+          <p className="my-2  cursor-pointer hover:text-[#F26334] hover:scale-105 transition ease-in-out duration-300">
             Membership
           </p>
-          <Link to="/sectors" className="my-2   hover:scale-105 transition ease-in-out duration-300  cursor-pointer">
+          <Link to="/sectors" className="my-2 hover:text-[#F26334]   hover:scale-105 transition ease-in-out duration-300  cursor-pointer">
             Gs1 Sectors
           </Link>
-          <p className="my-2 cursor-pointer hover:scale-105 transition ease-in-out duration-300">
+          <p className="my-2 cursor-pointer hover:text-[#F26334] hover:scale-105 transition ease-in-out duration-300">
             Resources
           </p>
-          <p className="my-2 cursor-pointer hover:scale-105 transition ease-in-out duration-300">
+          <p className="my-2 cursor-pointer hover:text-[#F26334] hover:scale-105 transition ease-in-out duration-300">
             verify product
           </p>
         </div>
