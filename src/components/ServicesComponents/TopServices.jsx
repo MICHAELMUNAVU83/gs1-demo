@@ -38,7 +38,7 @@ const TopServices = () => {
         <h1 className="p-4 font-bold text-5xl text-white">Top Services</h1>
         <div className="p-4">
           <Splide
-            className="px-16 hidden md:block h-[65px]"
+            className="px-16 hidden py-4 md:block h-[80px]"
             options={{
               perPage: 4,
               type: "loop",
@@ -53,8 +53,8 @@ const TopServices = () => {
             }}
           >
             {services.map((service) => (
-              <SplideSlide className="w-[257px]" key={service.id}>
-                <div className="bg-white cursor-pointer  rounded-lg p-4">
+              <SplideSlide className="w-[257px] h-[60px]" key={service.id}>
+                <div className="bg-white cursor-pointer h-[60px]  rounded-lg p-4">
                   <p className="text-black font-bold  text-2xl  text-center">
                     {service.name}
                   </p>
@@ -64,7 +64,7 @@ const TopServices = () => {
           </Splide>
 
           <Splide
-            className="px-16 md:hidden  h-[65px]"
+            className="px-16 md:hidden  h-[70px]"
             options={{
               perPage: 1,
               type: "loop",
@@ -79,9 +79,9 @@ const TopServices = () => {
             }}
           >
             {services.map((service) => (
-              <SplideSlide className="w-[257px]" key={service.id}>
-                <div className="bg-white cursor-pointer  rounded-lg p-4">
-                  <p className="text-black font-bold  text-2xl  text-center">
+              <SplideSlide className="w-[257px] h-[60px]" key={service.id}>
+                <div className="bg-white cursor-pointer  h-[60px] rounded-lg p-4">
+                  <p className="text-black font-bold    text-center">
                     {service.name}
                   </p>
                 </div>
