@@ -27,9 +27,9 @@ const SideBar = () => {
           </p>
         </div>
         <div className="uppercase mt-16 gap-4 flex flex-col text-[20px] leading-[17px] ">
-          <p className="my-2 cursor-pointer hover:scale-105 transition ease-in-out duration-300">
+          <Link to="/" className="my-2 cursor-pointer hover:scale-105 transition ease-in-out duration-300">
             Home
-          </p>
+          </Link>
           <p className="my-2 cursor-pointer   hover:scale-105 transition ease-in-out duration-300">
             About us
           </p>
