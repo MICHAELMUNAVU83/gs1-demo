@@ -6,14 +6,16 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Sectors from "./pages/Sectors";
 import TopBar from "./components/TopBar";
+import HomeScreen from "./HomeScreen";
 function App() {
   return (
     <div>
       <Router>
         <TopBar />
-        <SideBar />
+       
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/sectors" element={<Sectors />} />
         </Routes>
