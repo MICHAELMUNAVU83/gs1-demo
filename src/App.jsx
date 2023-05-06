@@ -14,8 +14,8 @@ function App() {
         <TopBar />
        
         <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/payment" element={<HomeScreen />} />
+          <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/sectors" element={<Sectors />} />
         </Routes>
